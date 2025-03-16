@@ -1,6 +1,6 @@
 {
-  "name": "AwesomeProject",
-  "version": "0.0.1",
+  "name": "WorkSync",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -11,8 +11,25 @@
   },
   "dependencies": {
     "@ant-design/react-native": "^3.2.2",
+    "@react-native-async-storage/async-storage": "^1.17.11",
+    "@react-native-community/netinfo": "^9.3.7",
+    "@react-navigation/bottom-tabs": "^6.5.7",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/stack": "^6.3.16",
+    "axios": "^1.3.4",
+    "dayjs": "^1.11.7",
     "react": "16.9.0",
-    "react-native": "0.62.3"
+    "react-native": "0.62.3",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-gesture-handler": "^2.9.0",
+    "react-native-reanimated": "^3.0.2",
+    "react-native-safe-area-context": "^4.5.0",
+    "react-native-screens": "^3.20.0",
+    "react-native-svg": "^13.8.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

@@ -7,26 +7,30 @@
  */
 
 import React from 'react';
-import {View, Text, SafeAreaView, StyleSheet} from 'react-native';
-import Home from './src/Home';
-const App: () => React$Node = () => {
+import { SafeAreaView, StyleSheet, StatusBar } from 'react-native';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
+import { store, persistor } from './src/redux/store';
+import AppNavigator from './src/navigation/AppNavigator';
+
+const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.item}>
-        <Text>Hello World!</Text>
-        <Home msg={'Hello'} />
-      </View>
-    </SafeAreaView>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <SafeAreaView style={styles.container}>
+          <StatusBar barStyle="dark-content" backgroundColor="#FFFFFF" />
+          <AppNavigator />
+        </SafeAreaView>
+      </PersistGate>
+    </Provider>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-  },
-  item: {
-    flex: 1,
+    backgroundColor: '#FFFFFF',
   },
 });
+
 export default App;
