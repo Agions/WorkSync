@@ -1,7 +1,6 @@
 # WorkSync
 
 <div align="center">
-  <img src="assets/logo.png" alt="WorkSync Logo" width="200"/>
   <p>
     <strong>现代化工时与薪资管理解决方案</strong>
   </p>
